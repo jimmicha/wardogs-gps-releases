@@ -1,0 +1,24 @@
+name: Technical support
+description: Report a problem with installation, tracking or routing.
+body:
+  - type: markdown
+    attributes:
+      value: This is a public ticket. For payment, delivery or refunds, contact the seller privately through the original PayPal transaction.
+  - type: input
+    id: version
+    attributes:
+      label: App version and Windows version
+    validations:
+      required: true
+  - type: input
+    id: map
+    attributes:
+      label: Map and edition
+      placeholder: e.g. Sabaturo, Lifetime beta
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the steps, what you expected and what appeared on screen. Omit private account or license details.
+    validations:
+      required: true

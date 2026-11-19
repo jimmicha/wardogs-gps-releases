@@ -1,0 +1,28 @@
+name: Submit a road for review
+description: Share a game-map road contribution or road pack exported from WARDOGS GPS.
+body:
+  - type: dropdown
+    id: map
+    attributes:
+      label: Game map
+      options:
+        - Bakurani
+        - Ozeti
+        - Zestafona
+        - Sabaturo
+    validations:
+      required: true
+  - type: textarea
+    id: survey
+    attributes:
+      label: Road file and checks
+      description: Attach your exported road JSON in a ZIP. Describe any junctions you drove through, road gaps and overpasses. State the game build if known.
+    validations:
+      required: true
+  - type: checkboxes
+    id: sharing
+    attributes:
+      label: Public sharing
+      options:
+        - label: I have permission to share this road survey publicly and allow the WARDOGS GPS publisher to review, edit and redistribute the survey in Free and Lifetime releases.
+          required: true
